@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    height: 150px;
+    background-image: url("/img/wall.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+/* Layout */ 
+.container {
+    width: 100%;
+    height: 1000px;
+    background-image: url(/img/cork.png);
+    box-sizing: border-box;
+   
+}
