@@ -7,9 +7,10 @@ axios
         postsArray.forEach((curPost) => {
             console.log(curPost)
             myHero.innerHTML += `<div class="col">
-                    <div class="card">
-                        <h3 class="card-mension">dedica</h3>
+            <img class="pin" src="img/pin.svg" >
+                    <div class="card polaroid">
                         <img src= "${curPost.url}">
+                        <h3 class="card-mension">dedica</h3>
                     </div>
                 </div>`
         })
