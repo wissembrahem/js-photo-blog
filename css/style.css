@@ -28,6 +28,9 @@ img {
 .justify-content-around {
     justify-content: space-around;
 }
+.justify-content {
+    justify-content: center;
+}
 
 .align-items-center {
     align-items: center;
@@ -58,13 +61,14 @@ img {
 .col {
     width: 30%;
     margin-bottom: 10px;
+    position: relative;
 }
 .pin {
     position: absolute;
-    top: 15px;
+    top: -10px;
     width: 20px;
-    height: 20px;
-    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .polaroid {
@@ -80,4 +84,28 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+.d-none {
+    display: none;
 }

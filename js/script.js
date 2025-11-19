@@ -6,7 +6,7 @@ axios
         const postsArray = resp.data;
         postsArray.forEach((curPost) => {
             console.log(curPost)
-            myHero.innerHTML += `<div class="col">
+            myHero.innerHTML += `<div class="col flex justify-content">
             <img class="pin" src="img/pin.svg" >
                     <div class="card polaroid">
                         <img src= "${curPost.url}">
@@ -14,9 +14,9 @@ axios
                     </div>
                 </div>`
         })
-});
+    });
 myHero.forEach((myHeroElem) => {
-    myHeroElem.addEvenListener("click",function () {
+    myHeroElem.addEvenListener("click", function () {
         alert("click");
     });
 });
